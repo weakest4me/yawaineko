@@ -27,6 +27,10 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 a {
@@ -50,6 +54,7 @@ a {
 .site-title {
   font-family: "Manrope", sans-serif;
   font-size: 0.95rem;
+  font-weight: 400;
   letter-spacing: 0.2em;
   text-decoration: none;
   text-transform: lowercase;
@@ -70,6 +75,7 @@ a {
   gap: 18px;
   font-family: "Manrope", sans-serif;
   font-size: 0.92rem;
+  font-weight: 400;
 }
 
 .site-nav a {
@@ -248,6 +254,7 @@ a {
 
 .link-column a {
   font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 400;
   line-height: 1.4;
   text-decoration: underline;
   text-underline-offset: 0.16em;
@@ -270,6 +277,7 @@ a {
 .statement p {
   margin: 0;
   font-size: clamp(1.5rem, 3vw, 2.15rem);
+  font-weight: 400;
   line-height: 1.72;
   text-align: center;
 }
@@ -283,6 +291,7 @@ a {
 .quote {
   margin: 0;
   font-size: clamp(1.7rem, 3.2vw, 2.35rem);
+  font-weight: 400;
   text-align: center;
 }
 
@@ -294,7 +303,7 @@ a {
 .section-label {
   margin: 0 0 120px;
   font-size: clamp(1.7rem, 3vw, 2.2rem);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .contact-box {
@@ -309,6 +318,7 @@ a {
 .contact-link {
   font-family: "Manrope", sans-serif;
   font-size: 1.05rem;
+  font-weight: 400;
 }
 
 .guideline-copy {
