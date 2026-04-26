@@ -3,196 +3,153 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yowai Neko</title>
+    <title>やわいねこ</title>
     <meta
       name="description"
-      content="プロフィール、リンク、活動内容を1ページにまとめたシンプルなポートフォリオサイト。"
+      content="やわいねこの記録を静かにまとめた、白い余白のある個人サイト。"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500;700&family=Manrope:wght@400;500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;700&family=Manrope:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <header class="site-header">
-        <a class="brand" href="#top">Yowai Neko</a>
-        <button
-          class="menu-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="site-nav"
-        >
-          Menu
-        </button>
-        <nav id="site-nav" class="site-nav" aria-label="グローバルナビゲーション">
-          <a href="#about">About</a>
-          <a href="#links">Links</a>
-          <a href="#works">Works</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
+    <header class="site-header">
+      <a class="site-title" href="#top">yawaineko</a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        menu
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="ページ内リンク">
+        <a href="#about">about</a>
+        <a href="#links">links</a>
+        <a href="#contact">contact</a>
+        <a href="#guideline">guideline</a>
+      </nav>
+    </header>
 
-      <main id="top">
-        <section class="hero">
-          <div class="hero-copy">
-            <p class="eyebrow">Personal Site / Profile / Links</p>
-            <h1>
-              余白のある見せ方で、
-              <span>あなたらしさ</span>
-              が伝わるページへ。
-            </h1>
-            <p class="hero-text">
-              SNS、作品、活動情報、連絡先をひとつにまとめた、静かな存在感のあるプロフィールサイトです。
-            </p>
-            <div class="hero-actions">
-              <a class="button primary" href="#links">リンクを見る</a>
-              <a class="button secondary" href="#contact">お問い合わせ</a>
-            </div>
-          </div>
+    <main id="top" class="page">
+      <section class="hero section">
+        <div class="scene-card scene-card-large" data-reveal>
+          <img
+            class="scene-photo"
+            src="assets/scene-vertical.png"
+            alt="やわらかな白い庭の風景"
+          />
+          <div class="scene-overlay"></div>
+          <p class="scene-copy scene-copy-main">やわらかなはしょ</p>
+        </div>
+        <p class="handle" data-reveal>@yawaineko</p>
+      </section>
 
-          <aside class="profile-card">
-            <div class="avatar-frame">
-              <div class="avatar-core">YN</div>
-            </div>
-            <p class="status">currently open for collaboration</p>
-            <h2>@yourname</h2>
-            <p class="profile-summary">
-              イラスト、制作活動、個人プロジェクトなどを発信するためのミニマルなホームページ。
-            </p>
-            <ul class="profile-meta">
-              <li>Based in Japan</li>
-              <li>Static site / GitHub Pages ready</li>
-              <li>Custom domain compatible</li>
-            </ul>
-          </aside>
-        </section>
+      <section id="about" class="section poem-layout">
+        <div class="poem-row poem-row-top" data-reveal>
+          <div class="mini-scene mini-scene-left">
+            <img
+              class="mini-photo"
+              src="assets/scene-door.png"
+              alt="木漏れ日が差し込む白い壁と扉"
+            />
+            <div class="mini-overlay"></div>
+          </div>
+          <p class="poem">
+            こもれびがほほえむ、
+            <br />
+            そんなばしょ。
+          </p>
+        </div>
 
-        <section id="about" class="content-block">
-          <div class="section-heading">
-            <p class="eyebrow">About</p>
-            <h2>このサイトでできること</h2>
+        <div class="poem-row poem-row-bottom" data-reveal>
+          <p class="poem">
+            わたし、やわいは、
+            <br />
+            ここにいます。
+          </p>
+          <div class="mini-scene mini-scene-right">
+            <img
+              class="mini-photo"
+              src="assets/scene-wide.png"
+              alt="木と白い中庭の風景"
+            />
+            <div class="mini-overlay"></div>
           </div>
-          <div class="about-grid">
-            <article>
-              <h3>プロフィールを整える</h3>
-              <p>
-                名前、肩書き、活動内容、世界観をシンプルに見せて、訪問者が一目で人物像をつかめる構成です。
-              </p>
-            </article>
-            <article>
-              <h3>リンクをひとつに集約</h3>
-              <p>
-                SNS、ショップ、ポートフォリオ、配布ページなどをまとめて、案内ページとして使えます。
-              </p>
-            </article>
-            <article>
-              <h3>将来の拡張に対応</h3>
-              <p>
-                独自ドメイン、お問い合わせフォーム、実績追加など、あとから育てやすい静的サイト構成にしています。
-              </p>
-            </article>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <section id="links" class="content-block">
-          <div class="section-heading">
-            <p class="eyebrow">Links</p>
-            <h2>よく使う導線</h2>
-          </div>
-          <div class="link-stack">
-            <a href="https://x.com/" target="_blank" rel="noreferrer">
-              <span>X / Twitter</span>
-              <strong>日々の投稿を見る</strong>
-            </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-              <span>Instagram</span>
-              <strong>写真やビジュアルをまとめる</strong>
-            </a>
-            <a href="https://github.com/" target="_blank" rel="noreferrer">
-              <span>GitHub</span>
-              <strong>制作物やコードを公開する</strong>
-            </a>
-            <a href="#works">
-              <span>Portfolio</span>
-              <strong>作品や活動実績を見る</strong>
-            </a>
-          </div>
-        </section>
+      <section id="links" class="section links-section" data-reveal>
+        <div class="link-column">
+          <a href="https://x.com/" target="_blank" rel="noreferrer">x</a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">youtube</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">instaglam</a>
+          <a href="https://booth.pm/" target="_blank" rel="noreferrer">booth</a>
+          <a href="https://www.fanbox.cc/" target="_blank" rel="noreferrer">fanbox</a>
+        </div>
 
-        <section id="works" class="content-block">
-          <div class="section-heading">
-            <p class="eyebrow">Works</p>
-            <h2>活動や作品の見せ方</h2>
-          </div>
-          <div class="works-grid">
-            <article class="work-card">
-              <p class="work-label">Project 01</p>
-              <h3>ポートフォリオ紹介</h3>
-              <p>
-                代表作や制作コンセプトを短くまとめて、外部ポートフォリオへの入り口にできます。
-              </p>
-            </article>
-            <article class="work-card">
-              <p class="work-label">Project 02</p>
-              <h3>イベント告知</h3>
-              <p>
-                展示、頒布、配信予定などを更新して、トップページだけで近況が伝わるようにできます。
-              </p>
-            </article>
-            <article class="work-card">
-              <p class="work-label">Project 03</p>
-              <h3>依頼受付ページ</h3>
-              <p>
-                料金目安や対応内容を追加して、お問い合わせフォームとつなげる構成にも発展できます。
-              </p>
-            </article>
-          </div>
-        </section>
+        <div class="statement">
+          <p>
+            いろいろなばしょで、わたしをきろくしていま
+            <br />
+            す .
+          </p>
+          <p>
+            わたしがわたしを、わすれないように
+            <br />
+            あなたがわたしを、わすれないように
+          </p>
+        </div>
+      </section>
 
-        <section id="contact" class="content-block contact-block">
-          <div class="section-heading">
-            <p class="eyebrow">Contact</p>
-            <h2>お問い合わせ導線</h2>
-          </div>
-          <div class="contact-layout">
-            <div class="contact-copy">
-              <p>
-                いまは静的サイトとして公開できる構成です。すぐに連絡を受けたい場合は `mailto:` リンクを使い、あとから
-                Formspree などを接続すればフォーム化できます。
-              </p>
-              <a class="button primary" href="mailto:hello@example.com">
-                hello@example.com に連絡する
-              </a>
-            </div>
+      <section class="section quote-section" data-reveal>
+        <p class="quote">「 こもれびにさく、いちりんのおはな 」</p>
+      </section>
 
-            <form class="contact-form" data-form-state="idle">
-              <label>
-                <span>お名前</span>
-                <input type="text" name="name" placeholder="山田 太郎" />
-              </label>
-              <label>
-                <span>メールアドレス</span>
-                <input type="email" name="email" placeholder="name@example.com" />
-              </label>
-              <label>
-                <span>内容</span>
-                <textarea
-                  name="message"
-                  rows="5"
-                  placeholder="将来的に Formspree や Google Forms と連携できます。"
-                ></textarea>
-              </label>
-              <button class="button secondary" type="submit">フォーム準備中</button>
-              <p class="form-note" aria-live="polite"></p>
-            </form>
-          </div>
-        </section>
-      </main>
-    </div>
+      <section id="contact" class="section contact-section" data-reveal>
+        <h2 class="section-label">おといあわせ</h2>
+        <div class="contact-box">
+          <p>
+            ご連絡はメールまたは各SNSのDMからどうぞ。
+            <br />
+            フォームは後から追加できるようにしてあります。
+          </p>
+          <a class="contact-link" href="mailto:hello@example.com">hello@example.com</a>
+        </div>
+      </section>
+
+      <section id="guideline" class="section guideline-section" data-reveal>
+        <h2 class="section-label">がいどらいん</h2>
+        <div class="guideline-copy">
+          <p>
+            ・x , youtube , やわらかなおとりえ等やわいがインター・ネ
+            <br />
+            ットに投稿する写真 , 動画 , イラスト , その他全ての記録
+            <br />
+            は、その場所だけの秘密にしてください .
+            <br />
+            （ いいもの . x のリポスト , youtube のリンク共有等
+            <br />
+            だめなもの . 許可なく使用 , 転載 , 加工 , 配布 , ai 学習等 ）
+          </p>
+
+          <p>
+            ・非営利目的に限り , やわいに関する二次創作ができます .
+            <br />
+            ただし , 著しくイメージを下げるもの , 公序良俗に反する
+            <br />
+            もの , 第三者の権利を侵害するもの , 宗教関連 , 政治的
+            <br />
+            関連のもの , 成人向けのものに関しては公開禁止です .
+          </p>
+        </div>
+        <p class="handle">@yawaineko</p>
+      </section>
+    </main>
 
     <script src="script.js"></script>
   </body>

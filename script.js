@@ -3,8 +3,8 @@ const siteNav = document.querySelector(".site-nav");
 
 if (menuToggle && siteNav) {
   menuToggle.addEventListener("click", () => {
-    const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
-    menuToggle.setAttribute("aria-expanded", String(!isExpanded));
+    const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+    menuToggle.setAttribute("aria-expanded", String(!expanded));
     siteNav.classList.toggle("is-open");
   });
 
@@ -16,20 +16,17 @@ if (menuToggle && siteNav) {
   });
 }
 
-const revealTargets = document.querySelectorAll(".hero-copy, .profile-card, .content-block");
+const revealTargets = document.querySelectorAll("[data-reveal]");
 
-revealTargets.forEach((element, index) => {
-  element.setAttribute("data-reveal", "");
-  element.style.transitionDelay = `${index * 80}ms`;
-});
-
-const observer = new IntersectionObserver(
+const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
+      if (!entry.isIntersecting) {
+        return;
       }
+
+      entry.target.classList.add("is-visible");
+      revealObserver.unobserve(entry.target);
     });
   },
   {
@@ -37,15 +34,7 @@ const observer = new IntersectionObserver(
   }
 );
 
-revealTargets.forEach((element) => observer.observe(element));
-
-const contactForm = document.querySelector(".contact-form");
-const formNote = document.querySelector(".form-note");
-
-if (contactForm && formNote) {
-  contactForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    formNote.textContent =
-      "このフォームはまだ未接続です。公開時は Formspree などに接続して送信できるようにします。";
-  });
-}
+revealTargets.forEach((target, index) => {
+  target.style.transitionDelay = `${index * 70}ms`;
+  revealObserver.observe(target);
+});
